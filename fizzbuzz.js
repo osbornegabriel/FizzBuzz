@@ -21,3 +21,11 @@ multOfEval = function(x){
     return x;
   }
 }
+
+var values = new Array(100);
+var fizzBuzzValues = values.fill().map(function(value, index){
+  return multOfEval(index + 1);
+})
+fizzBuzzValues.forEach(function(x){
+  console.log(x);
+})
