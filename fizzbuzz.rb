@@ -6,7 +6,7 @@ def mult_five(i)
   i % 5 == 0
 end
 
-def mult_of(i)
+def mult_of_eval(i)
   if mult_three(i) && mult_five(i)
     "FizzBuzz"
   elsif mult_three(i)
@@ -19,7 +19,7 @@ def mult_of(i)
 end
 
 integers = Array(1..100)
-integers.map!{|i| mult_of(i)}
+integers.map!{|i| mult_of_eval(i)}
 
 #For if printing each value is necessary
 integers.each{|i| p i}
